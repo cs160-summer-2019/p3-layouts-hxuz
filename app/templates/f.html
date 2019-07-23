@@ -19,7 +19,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            align-content: center;
+            align-content: flex-start;
             background-color: purple;
         }
       
@@ -27,14 +27,24 @@
             width: 100%;
             height: 190px;
             background-color: coral;
-            margin-top: 25px;
+            margin-top: 32px;
+            flex: 1 1 auto;
+        }
+        
+        .boxx {
+            width: 100%;
+            height: 190px;
+            background-color: coral;
+            margin-top: 32px;
+            margin-bottom: 32px
+            flex: 1 1 auto;
         }
     </style>
 	<body>
 		<div class="flex-container">
             <div class="box"></div>
             <div class="box"></div>
-            <div class="box"></div>
+            <div class="boxx"></div>
         </div>
 	</body>
 </html>
