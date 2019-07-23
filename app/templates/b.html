@@ -13,8 +13,39 @@
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
 	</head>
+    <style>
+        .flex-container {
+            height: 700px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+            background-color: purple;
+        }
+      
+        .box {
+            width: 250px;
+            height: 190px;
+            background-color: coral;
+            margin: 30px 15px;
+        }
+        
+        .boxx {
+            width: 250px;
+            height: 190px;
+            background-color: coral;
+            margin: 5px 15px;
+        }
+    </style>
 	<body>
-		<!-- Your layout here -->
+		<div class="flex-container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="boxx"></div>
+        </div>
 
 	</body>
 </html>

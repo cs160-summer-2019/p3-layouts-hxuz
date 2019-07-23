@@ -13,8 +13,45 @@
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
 	</head>
+    <style>
+        .flex-container {
+            height: 700px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: purple;
+        }
+      
+        .one {
+            width: 420px;
+            height: 100%;
+            background-color: coral;
+            margin-left: 35px;
+            flex: 1 1 auto;
+        }
+        
+        .two {
+            width: 420px;
+            height: 100%;
+            background-color: coral;
+            margin-left: 35px;
+            flex: 1 1 auto;
+        }
+        
+        .three {
+            width: 420px;
+            height: 100%;
+            background-color: coral;
+            margin-left: 35px;
+            margin-right: 35px;
+            flex: 1 1 auto;
+        }
+    </style>
 	<body>
-		<!-- Your layout here -->
-
+		<div class="flex-container">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
 	</body>
 </html>
